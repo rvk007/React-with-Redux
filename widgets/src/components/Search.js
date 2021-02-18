@@ -31,7 +31,6 @@ const Search = () => {
     };
     searchTerm();
   }, [debouncedTerm]);
-  start;
 
   const renderedResults = results.map(result => {
     return (
