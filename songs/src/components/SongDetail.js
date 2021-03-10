@@ -18,7 +18,7 @@ const SongDetail = ({ song }) => {
 };
 
 const mapStateToProps = state => {
-  return { song: state.selectedSong };
+  return { song: state.selectedSong }; //reducers
 };
 
 export default connect(mapStateToProps)(SongDetail);
