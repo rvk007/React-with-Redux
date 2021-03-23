@@ -12,4 +12,10 @@ The above approach will give an error because fetchPosts is an action creator, i
 
 - When the application boots up, it is going to call all the reducers one time, as initialization.
 
-Reducers:
+- In javascript === operator for variables, matches the references of the variable:
+  numbers = [1,2,3]
+
+  numbers === numbers true
+  numbers === [1,2,3] false
+
+- Reducers:
