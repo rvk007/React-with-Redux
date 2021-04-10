@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const one = () => {
 return (
+
 <div>
 One!
 {/_ Bad Approach
@@ -16,6 +17,7 @@ One!
 
 const two = () => {
 return (
+
 <div>
 <h1>Two!</h1>
 {/_ Bad Approach
@@ -27,6 +29,7 @@ return (
 
 const App = () => {
 return (
+
 <h1>
 <BrowserRouter>
 <h1>
@@ -39,3 +42,8 @@ return (
 };
 
 export default App;
+
+To use a action creator in a component:
+
+- use connect(mapStateToProps, {action_creator})(component)
+- Then in component access it like this: this.props.action_creator
